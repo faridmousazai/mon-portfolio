@@ -231,7 +231,7 @@ a:hover {
   background-color: #2c3e50;
 }
 .back .head {
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 .skils h2,
 h3 {
@@ -266,7 +266,7 @@ h3 {
   padding-top: 15px;
 }
 .paragraph {
-  text-align: center;
+  text-align: left;
   color: #fff;
   font-size: 18px;
   padding: 10px 10px;
@@ -285,7 +285,7 @@ h3 {
 @media (min-width: 920px) {
   .head {
     font-size: 30px;
-    padding: 20px;
+    padding: 10px;
   }
   .paragraph {
     font-size: 20px;
@@ -300,7 +300,7 @@ h3 {
 }
 .front,
 .back {
-  padding: 0 40px;
+  padding: 0 20px;
 }
 
 @media (min-width: 920px) {
@@ -327,12 +327,12 @@ h3 {
   .front img,
   .back img {
     order: -1;
-    width: 10rem;
+    /* width: 10rem; */
     height: auto;
   }
   .front .head,
   .back .head {
-    width: calc(100% - 11rem);
+    /* width: calc(100% - 11rem); */
     font-size: 20px;
   }
 }
@@ -378,7 +378,10 @@ h3 {
   padding-top: 30px;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 370px) and (max-width: 920px) {
+  .paragraph {
+    text-align: center;
+  }
   .projects h3 {
     font-size: 2rem;
     padding-top: 40px;
@@ -590,7 +593,7 @@ form .btn {
   line-height: 1;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 370px) {
   .footer {
     padding: 20px;
   }
