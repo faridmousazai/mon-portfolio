@@ -1,0 +1,609 @@
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "AbyssinicaSIL";
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("/fonts/AbyssinicaSIL-Regular.ttf") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  background-color: #161718;
+  min-height: 100vh;
+  font-family: Roboto;
+}
+nav {
+  background-color: #2f3335;
+  margin-top: 0;
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: rgb(204, 220, 223);
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: #fff;
+  font-size: 15px;
+  padding: 6px 10px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,
+a:hover {
+  background: #1b9bff;
+  transition: 0.5s;
+}
+.checkbtn {
+  float: right;
+  line-height: 80px;
+  margin-right: 15px;
+  cursor: pointer;
+  display: none;
+  color: #fff;
+}
+.checkbtn svg {
+  height: 3.3rem;
+  width: 2.9rem;
+  padding-top: 18px;
+}
+#check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  .nav ul li a {
+    font-size: 15px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  #check:checked ~ ul {
+    display: block;
+    left: 0;
+  }
+  ul {
+    position: absolute;
+    width: 100%;
+    background: #2c3e50;
+    top: 80px;
+    left: -100;
+    text-align: center;
+    transition: all 0.5s;
+    display: none;
+  }
+  nav ul li {
+    display: block;
+    margin: 40px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+}
+.container {
+  background-image: url(/photos/web-development-minimalism-bl.jpg);
+  /* width: 100%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.try {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  text-transform: uppercase;
+}
+.try h1 {
+  color: rgb(238, 241, 242);
+  padding-bottom: 20px;
+  text-align: center;
+}
+.try p {
+  color: rgb(195, 190, 190);
+  text-align: center;
+  font-size: 1.4rem;
+}
+/* media q for tablate and after pc*/
+@media (min-width: 420px) {
+  .container {
+    height: 50vh;
+  }
+  .try {
+    justify-content: center;
+  }
+  .try p {
+    font-size: 1.5rem;
+  }
+  .try h1 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 920px) {
+  .container {
+    /* background-size: contain; */
+    background-position: center;
+  }
+  .try {
+    justify-content: center;
+  }
+  .try p {
+    font-size: 1.5rem;
+  }
+  .try h1 {
+    font-size: 2rem;
+  }
+}
+
+/* About */
+.background-color {
+  background-color: #253337;
+  padding-bottom: 10px;
+}
+.about {
+  color: #fff;
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.about h3 {
+  margin-top: 0;
+  font-size: 15px;
+  color: rgb(79, 176, 193);
+}
+.img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+/* media q for tablate and after pc*/
+@media (min-width: 420px) {
+  .about h3 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 920px) {
+  .about h3 {
+    font-size: 30px;
+  }
+  .background-color {
+    display: flex;
+  }
+  .background-color img {
+    width: 50%;
+  }
+}
+
+/* Skils */
+
+.skils {
+  background-color: #586164;
+}
+.back {
+  background-color: #1d3a40;
+}
+.front {
+  background-color: #2c3e50;
+}
+.back .head {
+  padding-top: 50px;
+}
+.skils h2,
+h3 {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skils h2 {
+  font-size: 2rem;
+  color: rgb(107, 206, 223);
+  padding-bottom: 15px;
+}
+
+.skils h3 {
+  font-size: 1.2rem;
+  padding-top: 30px;
+  margin-top: 0;
+}
+@media (min-width: 420px) {
+  .skils h3 {
+    font-size: 30px;
+  }
+}
+
+/* typography=>all textes and heads */
+.head {
+  color: #fff;
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: AbyssinicaSIL;
+  padding-top: 15px;
+}
+.paragraph {
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 10px;
+}
+
+@media (min-width: 420px) {
+  .head {
+    font-size: 50px;
+    padding: 20px;
+  }
+  .paragraph {
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+}
+@media (min-width: 920px) {
+  .head {
+    font-size: 30px;
+    padding: 20px;
+  }
+  .paragraph {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+}
+
+.front img,
+.back img {
+  height: 50%;
+  width: 100%;
+}
+.front,
+.back {
+  padding: 0 40px;
+}
+
+@media (min-width: 920px) {
+  .skils {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+  }
+  .skils h3,
+  .skils > .head {
+    width: 100%;
+  }
+  .front,
+  .back {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+    border-radius: 17px;
+  }
+  .front img,
+  .back img {
+    order: -1;
+    width: 10rem;
+    height: auto;
+  }
+  .front .head,
+  .back .head {
+    width: calc(100% - 11rem);
+    font-size: 20px;
+  }
+}
+
+/* projects */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.projects h2 {
+  font-size: 2rem;
+  color: rgb(244, 246, 247);
+}
+.projects h3 {
+  font-size: 1.2rem;
+  padding-top: 40px;
+}
+.project img {
+  /* height: 50%; */
+  width: 100%;
+}
+.project {
+  background-color: #586164;
+  border-radius: 16px;
+}
+.project .btn {
+  margin: 7px 7px 15px;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(15, 123, 142);
+  border-radius: 16px;
+  padding: 10px;
+}
+.project div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project .paragraph {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+
+@media (min-width: 420px) {
+  .projects h3 {
+    font-size: 2rem;
+    padding-top: 40px;
+  }
+  .project .paragraph {
+    font-size: 40px;
+  }
+  .project .btn {
+    padding: 20px;
+    margin: 14px 14px 30px;
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 920px) {
+  .projects-container {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .project {
+    width: 100%;
+  }
+  .project .paragraph {
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  .project .btn {
+    padding: 16px;
+    margin: 10px 10px 25px;
+    text-align: center;
+    font-size: 20px;
+  }
+}
+/* contact */
+.contacts {
+  background-color: #161718;
+  padding-top: 15px;
+}
+.contacts h2 {
+  font-size: 1.7rem;
+  color: rgb(244, 246, 247);
+  text-align: center;
+}
+.con-form {
+  background-color: #586164;
+  margin: 0px 25px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.contacts form,
+.contacts .message,
+.contacts .div {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.contacts .div {
+  width: 100%;
+}
+
+.contact input:not([type="checkbox"]) {
+  width: 100%;
+  height: 40px;
+  padding-left: 20px;
+  display: block;
+  margin-bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid skyblue;
+  border-radius: 15px;
+}
+
+.contact button {
+  width: 100%;
+  /* height: 40px; */
+  border: 1px solid skyblue;
+  background: rgb(47, 51, 53);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-top: 15px;
+}
+#msg {
+  border: 1px solid skyblue;
+  background: rgb(217, 222, 224);
+  color: rgb(28, 24, 24);
+  cursor: pointer;
+  border-radius: 15px;
+  height: 150px;
+  width: 100%;
+}
+.contact textarea {
+  padding: 10px;
+}
+
+.con-form label {
+  color: #fff;
+  padding: 10px 0;
+}
+/* .contacts .acceptance {
+  display: flex;
+  flex-direction: row;
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: flex-start;
+}
+
+.acceptance input[type="checkbox"] {
+  margin-top: 10px;
+}
+.acceptance label {
+  padding: 10px 15px 0px 15px;
+} */
+
+.acceptance input[type="checkbox"] {
+  display: inline;
+  margin-right: 10px;
+}
+.contacts .acceptance {
+  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+}
+form .btn {
+  margin-bottom: 25px;
+}
+
+@media (min-width: 370px) {
+  .contact .btn {
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 20px;
+  }
+
+  .contacts .acceptance label {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 920px) {
+  .contacts h2 {
+    font-size: 2.5rem;
+  }
+  .contact button {
+    width: 160px;
+    /* height: 50px; */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .contacts form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contacts .div {
+    width: calc(50% - 5px);
+  }
+  .contacts .message {
+    width: 100%;
+  }
+  .contacts .acceptance {
+    width: 100%;
+    padding: 15px 30px;
+  }
+  .con-form {
+    width: 600px;
+    margin: auto;
+  }
+  #msg {
+    height: 200px;
+  }
+  .contacts .div label {
+    text-align: center;
+  }
+  .con-form {
+    gap: 10px;
+  }
+}
+
+/* footer */
+.footer {
+  background-color: rgb(43, 45, 47);
+  margin-top: 20px;
+  padding: 20px 0;
+  position: relative;
+}
+.footer p {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-size: 1rem;
+}
+.footer .icon {
+  display: flex;
+  column-gap: 8px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.footer a {
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  bottom: 15px;
+  right: 6px;
+  line-height: 1;
+}
+
+@media (min-width: 420px) {
+  .footer {
+    padding: 20px;
+  }
+  .footer .icon {
+    column-gap: 25px;
+    size: 3rem;
+    margin-bottom: 15px;
+  }
+  .icon svg {
+    height: 3.3rem;
+    width: 2.9rem;
+  }
+  .footer p {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"></script>
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+    <header id="top">
+      <nav>
+        <label class="logo">M Farid</label>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24"
+            height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" class="feather feather-menu"><line
+              x1="3" y1="12" x2="21" y2="12"></line><line x1="3"
+              y1="6"
+              x2="21" y2="6"></line><line x1="3" y1="18" x2="21"
+              y2="18"></line></svg>
+        </label>
+        <ul>
+          <li><a class="active" href="#about">A Propos de moi</a></li>
+          <li><a href="#skils">Skils</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contacts">Contact</a></li>
+        </ul>
+      </nav>
+
+    </header>
+    <section class="container" id="container">
+      <div class="try">
+        <h1>Développeur web et web mobile junior</h1>
+        <p>Je Suis En Formation De DWWM!</p>
+      </div>
+
+    </section>
+    <section class="background-color" id="about">
+      <div class="about">
+        <h3>A Propos De Moi</h3>
+        <h2 class="head">Je Suis Farid Mousazai</h2>
+        <p class="paragraph">Lorem, ipsum dolor sit amet
+          consectetur
+          adipisicing elit.
+          Labore fugit soluta cum, impedit sed laborum
+          perferendis
+          officia culpa doloribus tempore sapiente atque vel
+          neque,
+          nisi alias itaque saepe modi animi.</p>
+      </div>
+
+      <img class="img"
+        src="/photos/photo-1498050108023-c5249f4df085.webp"
+        alt="">
+    </section>
+    <section class="skils" id="skils">
+      <h3>Skils</h3>
+      <h2 class="head">Front End / Back end Development</h2>
+      <div class="front">
+        <h1 class="head">Front-end Development</h1>
+        <p class="paragraph">Lorem ipsum dolor sit amet
+          consectetur
+          adipisicing elit.
+          Veniam modi eligendi autem, rem porro ad dolore
+          minus
+          excepturi odit sit possimus provident totam
+          consectetur
+          laboriosam doloribus eveniet vero aliquid incidunt.</p>
+        <img src="/photos/ux-design.png">
+      </div>
+      <div class="back">
+        <h1 class="head">Back-end Development</h1>
+        <p class="paragraph">Lorem ipsum dolor sit amet
+          consectetur
+          adipisicing elit.
+          Praesentium, reprehenderit eius aliquam placeat
+          similique
+          saepe magnam eaque esse porro officia dolorem, quo,
+          perferendis animi quis laudantium sint illo corporis
+          unde!</p>
+        <img src="/photos/back-end.png">
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h3>Projets</h3>
+      <h2 class="head">Derniers Projets</h2>
+      <div class="projects-container">
+        <div class="project">
+          <img src="/photos/restaurant.png">
+          <div>
+            <p class="paragraph">Kabul Paris Restaurant</p>
+            <a class="btn"
+              href="https://faridmousazai.github.io/cricket-kart">Voir la
+              Démo</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="/photos/Dart.png">
+          <div>
+            <p class="paragraph">Darts</p>
+            <a class="btn"
+              href="https://darts-fk.netlify.app/">Voir la
+              Démo</a>
+          </div>
+        </div>
+        <div class="project">
+          <img src="/photos/farmipaton.png">
+          <div>
+            <p class="paragraph">Farmipaton</p>
+            <a class="btn" href="">Voir la
+              Démo</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="contacts" id="contacts">
+      <div class="contact">
+        <h2 class="paragraph">Un projet en tête ?</h2>
+        <form class="con-form" method="POST">
+          <div class="div">
+            <label for="contact-name">Votre Nom complet</label>
+            <input type="text" id="contact-name" name="nameofperson"
+              placeholder="Farid" required>
+          </div>
+          <div class="div">
+            <label for="contact-mail">Votre Mail</label>
+            <input type="text" id="contact-mail" name="username"
+              placeholder="farid@mail.com" required>
+          </div>
+
+          <div class="message">
+            <label for="msg">Votre Message</label>
+            <textarea name="message" id="msg" cols="30" rows="10"
+              required></textarea>
+          </div>
+          <div class="acceptance">
+            <input type="checkbox" id="chk-box">
+            <label for="chk-box">J'acceept que mes données
+              personnelles
+              soient conservées par Farid Mousazai. Elle ne seront
+              pas
+              cédées ou revendues à des tiers.</label>
+          </div>
+          <button class="btn" type="submit">Envoyer</button>
+        </form>
+
+
+      </div>
+
+    </section>
+
+    <footer class="footer">
+      <div class="icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24"
+          height="24"
+          viewBox="0 0 24 24" fill="none" stroke="white"
+          stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" class="feather
+          feather-facebook"><path
+            d="M18 2h-3a5 5 0 0 0-5
+            5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1
+            0 0 1 1-1h3z"></path></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24"
+          height="24"
+          viewBox="0 0 24 24" fill="none" stroke="white"
+          stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" class="feather feather-github"><path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0
+            0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0
+            20
+            4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38
+            13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0
+            0 5
+            4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44
+            7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24"
+          height="24"
+          viewBox="0 0 24 24" fill="none" stroke="white"
+          stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" class="feather
+          feather-instagram"><rect
+            x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path
+            d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line
+            x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+      </div>
+      <p class="paragraph">All rights reserved &copy; - 2022</p>
+      <a href="#top">↑</a>
+    </footer>
+
+    <script>
+    var check = document.getElementById('check');
+    var menuItems = document.querySelectorAll('nav a');
+      menuItems.forEach(a => {
+          a.addEventListener('click', function(){
+            check.checked = false;
+          })
+      });
+  </script>
+  </body>
+</html>
